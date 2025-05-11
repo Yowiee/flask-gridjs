@@ -35,6 +35,23 @@
         { id: 'phone', name: 'Phone Number', sort: false },
         { id: 'email', name: 'Email' },
       ],
+      style: {
+        table: {
+          border: '3px solid #ccc'
+        },
+        th: {
+          'background-color': 'rgba(0, 0, 0, 0.1)',
+          color: '#000',
+          'border-bottom': '3px solid #ccc',
+          'text-align': 'center',
+          'padding': '5px'
+        },
+        td: {
+          'text-align': 'center',
+          'padding': '5px'
+        },
+
+      },
       server: {
         url: '/api/data',
         then: results => results.data,
